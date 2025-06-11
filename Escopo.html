@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>"texto"</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Seção Inicial -->
+  <section class="bg-black text-white">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <div class="mb-6">
+        <div class="w-40 h-12 bg-white mb-4 flex items-center justify-center rounded-full">"imagem"</div>
+        <h1 class="text-3xl font-bold leading-snug">"texto"</h1>
+        <p class="mt-2">"texto"</p>
+      </div>
+      <a href="#" class="inline-block bg-white text-black font-semibold px-6 py-2 rounded-full hover:bg-gray-200 mt-4">"texto"</a>
+    </div>
+  </section>
+
+  <!-- Sobre o Programa -->
+  <section class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-2xl font-bold mb-4">"texto"</h2>
+        <p>"texto"</p>
+      </div>
+      <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-full">"imagem"</div>
+    </div>
+  </section>
+
+  <!-- Programa em Destaque (faixa azul clara) -->
+  <section class="bg-blue-100 py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-2">"texto"</h2>
+      <p class="mb-6">"texto"</p>
+      <!-- Etapas -->
+      <div class="space-y-4">
+        <div class="bg-red-500 text-white p-4 rounded-full">"texto"</div>
+        <div class="bg-orange-400 text-white p-4 rounded-full">"texto"</div>
+        <div class="bg-pink-600 text-white p-4 rounded-full">"texto"</div>
+        <div class="bg-yellow-400 text-white p-4 rounded-full">"texto"</div>
+        <div class="bg-red-600 text-white p-4 rounded-full">"texto"</div>
+      </div>
+      <!-- Botões -->
+      <div class="mt-6 space-x-4">
+        <a href="#" class="bg-yellow-400 px-4 py-2 rounded-full font-bold text-black">"texto"</a>
+        <a href="#" class="bg-orange-500 px-4 py-2 rounded-full font-bold text-white">"texto"</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quem pode participar -->
+  <section class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-2xl font-bold mb-4">"texto"</h2>
+        <p>"texto"</p>
+      </div>
+      <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-full">"imagem"</div>
+    </div>
+  </section>
+
+  <!-- Faixa azul escura -->
+  <section class="bg-blue-900 text-white py-12 text-center">
+    <h2 class="text-2xl font-bold mb-2">"texto"</h2>
+    <p>"texto"</p>
+  </section>
+
+  <!-- Benefícios com Carrossel automático de 3 itens -->
+  <section class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-8">"texto"</h2>
+
+      <!-- Carrossel com Alpine.js -->
+      <div x-data="carousel()" x-init="start()" class="relative">
+        <!-- Slides -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-500">
+          <template x-for="item in slides[activeSlide]" :key="item">
+            <div class="bg-blue-600 text-white p-6 rounded-full h-40 flex items-center justify-center text-lg">
+              <span x-text="item"></span>
+            </div>
+          </template>
+        </div>
+      </div>
+
+      <!-- Botão final -->
+      <div class="mt-10">
+        <a href="#" class="bg-yellow-400 px-6 py-2 rounded-full font-bold text-black">"texto"</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alpine.js + Função do Carrossel -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script>
+    function carousel() {
+      return {
+        slides: [
+          ['texto 1', 'texto 2', 'texto 3'],
+          ['texto 4', 'texto 5', 'texto 6'],
+          ['texto 7', 'texto 8', 'texto 9']
+        ],
+        activeSlide: 0,
+        start() {
+          setInterval(() => {
+            this.activeSlide = (this.activeSlide + 1) % this.slides.length;
+          }, 5000);
+        }
+      }
+    }
+  </script>
+
+  <!-- Realização -->
+  <section class="bg-gray-100 py-12 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="bg-white shadow p-6 rounded-full">"texto"</div>
+    </div>
+  </section>
+
+</body>
+</html>
