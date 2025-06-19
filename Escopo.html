@@ -2,21 +2,27 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>"texto"</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Residência TI - UFG</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
   <!-- Seção Inicial -->
   <section class="bg-black text-white">
     <div class="max-w-6xl mx-auto px-4 py-16">
-      <div class="mb-6">
-        <div class="w-40 h-12 bg-white mb-4 flex items-center justify-center rounded-full">"imagem"</div>
-        <h1 class="text-3xl font-bold leading-snug">"texto"</h1>
-        <p class="mt-2">"texto"</p>
+      <div class="mb-6 flex flex-col md:flex-row items-center md:items-start gap-6">
+        <img src="img/inf.jpg" alt="Logo" class="w-40 h-12 rounded-full object-cover">
+        <div>
+          <h1 class="text-3xl font-bold leading-snug">Programa de Residência em TIC 16</h1>
+          <p class="mt-2 max-w-xl">
+            INF-UFG e BRISA lançam Programa Residência em TIC 16 com bolsa e notebook para participantes.  
+            O programa vai capacitar 250 pessoas em tecnologias emergentes, como inteligência artificial, blockchain e IoT.
+          </p>
+          <a href="https://inf.ufg.br/n/187230-inf-ufg-e-brisa-lancam-programa-residencia-em-tic-16-com-bolsa-e-notebook-para-participantes" class="inline-block bg-white text-black font-semibold px-6 py-2 rounded-full hover:bg-gray-200 mt-4">Saiba Mais</a>
+        </div>
       </div>
-      <a href="#" class="inline-block bg-white text-black font-semibold px-6 py-2 rounded-full hover:bg-gray-200 mt-4">"texto"</a>
     </div>
   </section>
 
@@ -24,89 +30,132 @@
   <section class="bg-white py-16">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
       <div>
-        <h2 class="text-2xl font-bold mb-4">"texto"</h2>
-        <p>"texto"</p>
+        <h2 class="text-2xl font-bold mb-4">Objetivo</h2>
+        <p class="mb-6">
+          O programa visa capacitar 250 profissionais em tecnologias emergentes, como inteligência artificial, blockchain, internet das coisas (IoT), entre outras, para atender à crescente demanda do mercado de trabalho na Região Metropolitana de Goiânia e proximidades.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-4">Quem pode participar?</h2>
+        <ul class="list-disc list-inside space-y-2 mb-6">
+          <li>Graduados ou estudantes de graduação em áreas tecnológicas ou de ciências exatas, como engenharia, computação, física, matemática e química (bacharelado, licenciatura ou tecnólogo).</li>
+          <li>Formados em cursos técnicos de nível médio em ciências exatas.</li>
+        </ul>
       </div>
-      <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-full">"imagem"</div>
+      <img src="img/IMG_4496.JPG" alt="Imagem sobre o programa" class="w-full h-64 object-cover rounded">
     </div>
   </section>
 
-  <!-- Programa em Destaque (faixa azul clara) -->
+  <!-- Etapas do Processo -->
   <section class="bg-blue-100 py-16">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-2xl font-bold mb-2">"texto"</h2>
-      <p class="mb-6">"texto"</p>
-      <!-- Etapas -->
-      <div class="space-y-4">
-        <div class="bg-red-500 text-white p-4 rounded-full">"texto"</div>
-        <div class="bg-orange-400 text-white p-4 rounded-full">"texto"</div>
-        <div class="bg-pink-600 text-white p-4 rounded-full">"texto"</div>
-        <div class="bg-yellow-400 text-white p-4 rounded-full">"texto"</div>
-        <div class="bg-red-600 text-white p-4 rounded-full">"texto"</div>
+      <h2 class="text-2xl font-bold mb-6">Etapas do Processo Seletivo</h2>
+      <p class="mb-10 max-w-xl mx-auto">
+        O programa será dividido em duas fases:
+      </p>
+
+      <div class="space-y-10 max-w-3xl mx-auto text-left">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">1ª Etapa: Nivelamento (EaD)</h3>
+          <p class="mb-2">
+            Nesta fase, 250 candidatos participarão de um curso online com carga horária de 180 horas, que abordará conteúdos fundamentais como:
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Introdução à Plataforma de EaD da BRISA;</li>
+            <li>Lógica de Programação (com Python);</li>
+            <li>Programação Python;</li>
+            <li>Organização de Computadores;</li>
+            <li>Banco de Dados;</li>
+            <li>Empreendedorismo e Gerência de Projetos;</li>
+            <li>Desenvolvimento de Aplicativos Mobile;</li>
+            <li>Business Intelligence (BI);</li>
+            <li>Introdução a Big Data;</li>
+            <li>Introdução à Inteligência Artificial;</li>
+            <li>Introdução a Internet da Coisas (IoT);</li>
+            <li>Introdução à Engenharia de Requisitos;</li>
+            <li>Introdução ao Treinamento de IA;</li>
+            <li>Introdução à UI/UX.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">2ª Etapa: Imersão (Híbrida)</h3>
+          <p class="mb-2">
+            Após o nivelamento, os 50 melhores classificados participarão da etapa de Imersão em Computação Avançada, com 480 horas de atividades híbridas ao longo de seis meses. As atividades presenciais ocorrerão no campus da UFG, em Goiânia. Durante essa etapa, os participantes receberão:
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Um notebook para uso no programa;</li>
+            <li>Bolsa mensal de R$ 1.260,00 por seis meses.</li>
+          </ul>
+        </div>
       </div>
-      <!-- Botões -->
-      <div class="mt-6 space-x-4">
-        <a href="#" class="bg-yellow-400 px-4 py-2 rounded-full font-bold text-black">"texto"</a>
-        <a href="#" class="bg-orange-500 px-4 py-2 rounded-full font-bold text-white">"texto"</a>
+
+      <div class="mt-12 space-x-4">
+        <a href="https://inscricoesrestic.brisabr.com.br" target="_blank" class="bg-yellow-400 px-6 py-2 rounded-full font-bold text-black hover:bg-yellow-500">Inscreva-se</a>
+        <a href="mailto:suporteufg@brisabr.com.br" class="bg-orange-500 px-6 py-2 rounded-full font-bold text-white hover:bg-orange-600">Contato</a>
       </div>
     </div>
   </section>
 
-  <!-- Quem pode participar -->
-  <section class="bg-white py-16">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 class="text-2xl font-bold mb-4">"texto"</h2>
-        <p>"texto"</p>
-      </div>
-      <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-full">"imagem"</div>
-    </div>
+  <!-- Plataforma e Aula Inaugural -->
+  <section class="bg-white py-16 max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-6 text-center">Plataforma de Ensino e Aula Inaugural</h2>
+    <p class="mb-4 text-center">
+      <a href="https://inscricoesrestic.brisabr.com.br" target="_blank" class="text-blue-600 underline hover:text-blue-800">Acesse aqui a plataforma EAD</a> para assistir as aulas e acompanhar o conteúdo do curso.
+    </p>
+    <p class="text-center">
+      <a href="https://www.youtube.com/live/FHn_vXJwnv0?feature=shared" class="text-blue-600 underline hover:text-blue-800">Acesse a gravação da aula inaugural</a> que ocorreu no dia 24 de fevereiro de 2025 no Auditório Teatro Asklepiós da Faculdade de Medicina da UFG no Câmpus Colemar Natal e Silva.
+    </p>
   </section>
 
-  <!-- Faixa azul escura -->
-  <section class="bg-blue-900 text-white py-12 text-center">
-    <h2 class="text-2xl font-bold mb-2">"texto"</h2>
-    <p>"texto"</p>
-  </section>
-
-  <!-- Benefícios com Carrossel automático de 3 itens -->
+  <!-- Benefícios com Carrossel de Imagens -->
   <section class="bg-white py-16">
     <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-2xl font-bold mb-8">"texto"</h2>
+      <h2 class="text-2xl font-bold mb-8">Semana da Imersão</h2>
 
       <!-- Carrossel com Alpine.js -->
-      <div x-data="carousel()" x-init="start()" class="relative">
-        <!-- Slides -->
+      <div x-data="carousel()" x-init="start()" class="relative mb-16">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-500">
-          <template x-for="item in slides[activeSlide]" :key="item">
-            <div class="bg-blue-600 text-white p-6 rounded-full h-40 flex items-center justify-center text-lg">
-              <span x-text="item"></span>
+          <template x-for="item in currentSlides" :key="item">
+            <div class="overflow-hidden">
+              <img :src="item" alt="Foto Carrossel" class="w-full h-64 object-cover">
             </div>
           </template>
         </div>
       </div>
 
-      <!-- Botão final -->
-      <div class="mt-10">
-        <a href="#" class="bg-yellow-400 px-6 py-2 rounded-full font-bold text-black">"texto"</a>
+      <div>
+        <a href="https://inscricoesrestic.brisabr.com.br" target="_blank" class="bg-yellow-400 px-6 py-2 rounded-full font-bold text-black hover:bg-yellow-500">Quero Participar</a>
       </div>
     </div>
   </section>
 
-  <!-- Alpine.js + Função do Carrossel -->
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <!-- Script do Carrossel -->
   <script>
     function carousel() {
       return {
         slides: [
-          ['texto 1', 'texto 2', 'texto 3'],
-          ['texto 4', 'texto 5', 'texto 6'],
-          ['texto 7', 'texto 8', 'texto 9']
+          'img/IMG_4495.JPG', 'img/IMG_4496.JPG', 'img/IMG_4497.JPG', 'img/IMG_4498.JPG', 'img/IMG_4499.JPG',
+          'img/IMG_4500.JPG', 'img/IMG_4501.JPG', 'img/IMG_4502.JPG', 'img/IMG_4503.JPG', 'img/IMG_4505.JPG',
+          'img/IMG_4506.JPG', 'img/IMG_4507.JPG', 'img/IMG_4508.JPG', 'img/IMG_4509.JPG', 'img/IMG_4510.JPG',
+          'img/IMG_4511.JPG', 'img/IMG_4512.JPG', 'img/IMG_4513.JPG', 'img/IMG_4514.JPG', 'img/IMG_4515.JPG',
+          'img/IMG_4516.JPG', 'img/IMG_4517.JPG', 'img/IMG_4518.JPG', 'img/IMG_4519.JPG', 'img/IMG_4520.JPG',
+          'img/IMG_4523.JPG', 'img/IMG_4524.JPG', 'img/IMG_4526.JPG', 'img/IMG_4527.JPG', 'img/IMG_4529.JPG',
+          'img/IMG_4530.JPG', 'img/IMG_4532.JPG', 'img/IMG_4533.JPG', 'img/IMG_4602.JPG', 'img/IMG_4603.JPG',
+          'img/IMG_4604.JPG', 'img/IMG_4606.JPG', 'img/IMG_4607.JPG', 'img/IMG_4608.JPG', 'img/IMG_4610.JPG',
+          'img/IMG_4611.JPG', 'img/IMG_4612.JPG', 'img/IMG_4613.JPG', 'img/IMG_4614.JPG', 'img/IMG_4615.JPG',
+          'img/IMG_4616.JPG', 'img/IMG_4617.JPG', 'img/IMG_4618.JPG', 'img/IMG_4619.JPG', 'img/IMG_4621.JPG',
+          'img/IMG_4622.JPG'
         ],
         activeSlide: 0,
+        get currentSlides() {
+          return this.slides.slice(this.activeSlide, this.activeSlide + 3);
+        },
         start() {
           setInterval(() => {
-            this.activeSlide = (this.activeSlide + 1) % this.slides.length;
+            this.activeSlide += 3;
+            if (this.activeSlide >= this.slides.length) {
+              this.activeSlide = 0;
+            }
           }, 5000);
         }
       }
@@ -116,7 +165,7 @@
   <!-- Realização -->
   <section class="bg-gray-100 py-12 text-center">
     <div class="max-w-4xl mx-auto px-4">
-      <div class="bg-white shadow p-6 rounded-full">"texto"</div>
+      <div class="bg-white shadow p-6 rounded-full font-semibold">Realização: Universidade Federal de Goiás - UFG</div>
     </div>
   </section>
 
