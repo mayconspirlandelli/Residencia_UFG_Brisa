@@ -66,14 +66,28 @@
     </div>
   </section>
 
-  <!-- Imagem -->
-<div class="relative h-96 bg-blue-200">
-  <img 
-    src="img/inscrições.png" 
-    alt="Inscrições"
-    class="absolute top-1/2 left-1/2 w-42 h-60 object-cover shadow-lg transform -translate-x-1/2 -translate-y-1/2"
-  >
-</div>
+<!-- Seção com fundo azul ocupando toda a largura da página -->
+<section class="w-full py-12">
+  <div class="relative w-full max-w-5xl mx-auto">
+    <!-- Imagem retangular horizontal -->
+    <img 
+      src="img/Fundo.jpeg" 
+      alt="Inscrições"
+      class="w-full h-40 object-cover rounded-lg shadow-lg"
+    >
+
+    <!-- Texto sobre a imagem no canto esquerdo -->
+    <div class="absolute inset-0 flex flex-col justify-center items-start pl-8 bg-black bg-opacity-40 text-left">
+      <span class="text-white text-5xl">Programa de</span>
+      <span class="text-white text-6xl font-bold">Residência em TIC</span>
+    </div>
+
+    <!-- Caixa branca de inscrições sobre a imagem -->
+    <p class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 px-6 py-2 bg-white rounded-full shadow text-lg font-semibold text-gray-800 text-center">
+      INSCRIÇÕES DE 22/07 ATÉ 22/08 DE 2025
+    </p>
+  </div>
+</section>
 
 <!-- Seção só com fundo laranja que engloba os cards -->
 <section id= edital class="py-12 px-4 bg-blue-200">
